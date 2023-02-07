@@ -1,0 +1,17 @@
+#movies{
+  position: absolute;
+  width: 100%;
+  height: 884px;
+  left: 222px;
+  top: 140px;
+
+  background: #1F1A26;
+}
+
+#movieList{
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 114px;
+}
