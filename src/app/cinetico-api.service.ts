@@ -6,11 +6,24 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class CineticoApiService {
-  constructor(private http:HttpClient) {
 
+  urlBase: string;
+  constructor(private http:HttpClient) {
+    this.urlBase = 'http://127.0.0.1:8000/api/';
   }
 
+  /**
+   * Returns all movies
+   */
   getMovies(): Observable<any>{
-      return this.http.get('http://127.0.0.1:8000/api/movies');
+      return this.http.get(this.urlBase+'movies');
+  }
+
+  /**
+   * Returns movie information based on movie id
+   * @param movieId
+   */
+  getMovie(movieId:number): Observable<any>{
+      return  this.http.get(this.urlBase+'movie/'+movieId);
   }
 }

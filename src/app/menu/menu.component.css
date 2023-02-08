@@ -1,0 +1,14 @@
+#menu{
+  width: 222px;
+  height: 884px;
+  top: 140px;
+  background: #1F1A26;
+}
+
+#drawer
+{
+  padding: 20px;
+  width: 200px;
+  display: flex;
+  background: #1A161F;
+}

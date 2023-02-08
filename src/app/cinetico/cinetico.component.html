@@ -1,7 +1,10 @@
 <div id="movies">
   <div id="movieList">
     <div *ngFor="let movie of movies">
-      <div style="width: 207px;height: 299px;border-radius: 10px;background: #FFFFFF">{{movie.name}}</div>
+      <a routerLink="movie/{{movie.movie_id}}">
+        <img src="../../assets/images/{{movie.poster_name}}.jpg" style="width: 207px;height: 299px;border-radius: 10px;background: #FFFFFF">
+      </a>
+      <div style="height: 50px"></div>
     </div>
   </div>
 </div>

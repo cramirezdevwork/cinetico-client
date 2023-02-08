@@ -1,0 +1,37 @@
+#movie{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 140px;
+  justify-content: center;
+  background: #1F1A26;
+  height: 1000px;
+}
+
+#poster{
+  width: 353px;
+  height: 516px;
+  border-radius: 10px;
+}
+
+#title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  width: 370px;
+
+  color: #FFFFFF;
+}
+
+#synopsis{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  width: 499px;
+  height: 120px;
+
+  color: #FFFFFF;
+}
