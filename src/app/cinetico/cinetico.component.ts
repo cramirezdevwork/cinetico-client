@@ -8,6 +8,7 @@ import { CineticoApiService } from "../cinetico-api.service";
 })
 export class CineticoComponent {
   movies: any;
+  filterMovie = ''
 
   constructor(private api:CineticoApiService) {
     this.api.getMovies().subscribe(data =>{

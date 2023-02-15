@@ -1,6 +1,8 @@
 <div id="movies">
   <div id="movieList">
-    <div *ngFor="let movie of movies">
+    <p id="search">Búsqueda</p>
+    <input type="text" class="form-control mb-5" placeholder="Digita tu pelicula..." name="filterMovie" [(ngModel)]="filterMovie">
+    <div *ngFor="let movie of movies | filterMovies:filterMovie">
       <a routerLink="movie/{{movie.movie_id}}">
         <img src="../../assets/images/{{movie.poster_name}}.jpg" style="width: 207px;height: 299px;border-radius: 10px;background: #FFFFFF">
       </a>

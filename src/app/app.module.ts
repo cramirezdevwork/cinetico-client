@@ -11,6 +11,8 @@ import { MovieComponent } from './movie/movie.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { FilterMoviesPipe } from './pipes/filter-movies.pipe';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,14 +20,16 @@ import { MatSidenavModule } from "@angular/material/sidenav";
     HeaderComponent,
     CineticoComponent,
     MovieComponent,
-    MenuComponent
+    MenuComponent,
+    FilterMoviesPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    FormsModule
   ],
   providers: [CineticoApiService],
   bootstrap: [AppComponent]

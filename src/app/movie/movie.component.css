@@ -8,6 +8,13 @@
   height: 1000px;
 }
 
+#movie_information{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 60px;
+}
+
 #poster{
   width: 353px;
   height: 516px;
@@ -32,6 +39,25 @@
   line-height: 30px;
   width: 499px;
   height: 120px;
+  text-align: justify;
+
+  color: #FFFFFF;
+}
+
+.title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+}
+
+.description{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
 
   color: #FFFFFF;
 }

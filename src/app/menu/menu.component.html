@@ -1,7 +1,12 @@
 <mat-drawer-container id="menu" autosize>
   <mat-drawer #drawer id="drawer" mode="side">
+    <div style="display: flex; justify-content: space-between">
       <p style="color: #FFFFFF">MENU</p>
+      <button (click)="drawer.toggle(); showButton()" type="button" class="btn-close" style="color: #FFFFFF" aria-label="Close"></button>
+    </div>
     <a routerLink="/" style="color: #FFFFFF">Página Principal</a>
   </mat-drawer>
-  <button (click)="drawer.toggle()">Abir/Cerrar</button>
+  <span style="font-size: 20px; color: white;">
+  <i (click)="drawer.toggle(); hideButton()" *ngIf="!openMenu" class="fa-solid fa-bars fa-xl"></i>
+  </span>
 </mat-drawer-container>

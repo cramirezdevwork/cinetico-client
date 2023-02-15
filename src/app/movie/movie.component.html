@@ -1,8 +1,19 @@
 <div id="movie">
 <div style="margin-top: 100px; display: flex">
-  <img src="../../assets/images/{{movieResult.poster_name}}.jpg" id="poster">
+
+  <div>
+    <img src="../../assets/images/{{movieResult.poster_name}}.jpg" id="poster">
+
+    <div>
+      <p *ngIf="movieResult.cast_name" class="title">Reparto</p>
+      <p class="description">{{movieResult.cast_name}}</p>
+      <p class="title">Fecha de estreno</p>
+      <p class="description">{{movieResult.release_date | date}}</p>
+    </div>
+  </div>
+
   <div id="movie_information">
-    <p id="title">{{movieResult.name}}</p>
+    <p id="title">{{movieResult.name | uppercase }}</p>
     <p id="synopsis">{{movieResult.synopsis}}</p>
   </div>
 </div>

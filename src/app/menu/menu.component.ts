@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
+  public openMenu = false;
+  public hideButton(){
+    this.openMenu = true;
+  }
+  public showButton(){
+    this.openMenu = false;
+  }
 }
